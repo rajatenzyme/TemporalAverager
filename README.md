@@ -13,9 +13,9 @@ We release the training and testing code for THUMOS, EPIC-Kitchen 100 (verb, nou
 
 ## Introduction
 Recent studies have emphasized the importance of applying long-term temporal context modeling (TCM) blocks to the extracted video clip features such as employing complex self-attention mechanisms. In this paper, we present the simplest method ever to address this task and argue that the extracted video clip features are already informative to achieve outstanding performance without sophisticated architectures. To this end, we introduce TemporalMaxer, which minimizes long-term temporal context modeling while maximizing information from the extracted video clip features with a basic, parameter-free, and local region operating max-pooling block. Picking out only the most critical information for adjacent and local clip embeddings, this block results in a more efficient TAL model. We demonstrate that TemporalMaxer outperforms other state-of-the-art methods that utilize long-term TCM such as self-attention on various TAL datasets while requiring significantly fewer parameters and computational resources.
-<div align="center">
+<!-- <div align="center">
   <img src="figures/common_architecture.png" width="1100px"/>
-</div>
+</div> -->
 Our method, TemporalAverager, results in the simplest model ever for TAL task that contains minimalist parameters and computational cost for the TAL model. TemporalAverager is effective at modeling temporal contexts, which outperforms the robust baseline, ActionFormer, with 2.8x fewer GMACs and 3x faster inference speed. Especially, when comparing only the backbone time, our proposed method only takes 2.5 ms which is incredibly 8.0x faster than ActionFormer backbone, 20.1 ms.
 
 ## Installation
